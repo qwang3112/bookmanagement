@@ -10,20 +10,20 @@ Vue.use(VueRouter)
 const routes = [
   {
     path:"/",
-    name:"图书管理",
+    name:"Book Manage",
     component:Index,
     show:true,
     redirect:"/BookManage",
     children:[
       {
         path:"/BookManage",
-        name:"查询图书",
+        name:"Search Book",
         component:BookManage,
         show:true,
       },
       {
         path:"/AddBook",
-        name:"添加图书",
+        name:"Add Book",
         component:AddBook,
         show:true,
       }
